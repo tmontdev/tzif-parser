@@ -3,7 +3,6 @@
   "version": "0.0.10",
   "description": "easy handle time",
   "typings": "dist/index.d.ts",
-  "type": "module",
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc",

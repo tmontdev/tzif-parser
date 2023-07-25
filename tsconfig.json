@@ -1,21 +1,17 @@
 {
   "compilerOptions": {
-    "target": "ESNext",
-    "module": "ESNext",
-    "declaration": true,
+    "module": "commonjs",
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
     "outDir": "./dist",
+    "sourceMap": true,
     "strict": true,
-    "lib": ["ES2022"]
+    "target": "es2017",
+    "resolveJsonModule": true,
+    "allowJs": true
   },
-  "ts-node": {
-    "esm": true
-  },
+  "compileOnSave": true,
   "include": [
-    "src"
-  ],
-  "exclude": [
-    "node_modules",
-    "src/test",
-    "**/__tests__/*"
+    "src",
   ]
 }
