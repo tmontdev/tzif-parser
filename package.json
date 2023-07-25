@@ -1,0 +1,36 @@
+{
+  "name": "tzif",
+  "version": "0.0.10",
+  "description": "easy handle time",
+  "typings": "dist/index.d.ts",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tmontdev/chrono.me.git"
+  },
+  "files": [
+    "dist/**/*"
+  ],
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tmontdev/tzif.js/issues"
+  },
+  "homepage": "https://github.com/tmontdev/tzif.js#readme",
+  "devDependencies": {
+    "@types/node": "^20.4.2",
+    "@typescript-eslint/eslint-plugin": "^6.1.0",
+    "@typescript-eslint/parser": "^6.1.0",
+    "eslint": "^8.45.0",
+    "eslint-config-google": "^0.14.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.1.6",
+    "typescript-eslint": "0.0.1-alpha.0"
+  }
+}
