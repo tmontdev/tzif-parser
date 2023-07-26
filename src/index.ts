@@ -236,7 +236,8 @@ export function findTimeZoneIn(info: ZoneInfoFile, date: number, acceptFirstKnow
     const seconds = Math.floor(date / 1000);
 
     const index = info.ttimes.reduce((acc, time, idx, times) => {
-        if (time > times[acc] && time < seconds) {
+        let prev = acc == -1 ? 0 : acc
+        if (time > times[prev] && time < seconds) {
             return idx;
         }
         return acc;
@@ -252,7 +253,3 @@ export function findTimeZoneIn(info: ZoneInfoFile, date: number, acceptFirstKnow
 
     throw Error('There is no record of timezone information in the given date. Please consider accept the first known.');
 }
-
-
-let sp = parse('Asia/Jerusalem');
-console.log(sp)
